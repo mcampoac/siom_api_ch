@@ -1,0 +1,22 @@
+{
+    "type": "mysql",
+    "host": "192.168.2.86",
+    "port": 3306,
+    "username": "root",
+    "password": "Panchita23.",
+    "database": "qasiompe",
+    "synchronize": true,
+    "logging": true,
+    "entities": [],
+    "migrations": [
+        "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+        "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/entity",
+        "migrationsDir": "src/migration",
+        "subscribersDir": "src/subscriber"
+    }
+}

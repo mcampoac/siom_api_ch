@@ -2,7 +2,6 @@ import { Entity, Unique, Column } from 'typeorm';
 import { MinLength, IsNotEmpty } from 'class-validator';
 
 @Entity()
-@Unique(['username'])
 export class Usuario {
 
   @Column()

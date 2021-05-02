@@ -6,7 +6,8 @@ import { validate } from 'class-validator';
 export class UserController {
 
     static getAll = async (req: Request, res: Response) => {
-        const userRepository = getRepository(Usuario);
+      /*
+      const userRepository = getRepository(Usuario);
       let users;
 
       try {
@@ -19,7 +20,8 @@ export class UserController {
         res.send(users);
       } else {
         res.status(404).json({ message: 'Not result' });
-      }
+      }*/
+      res.status(404).json({ message: 'Not result' });
     };
     /*
     static getById = async (req: Request, res: Response) => {

@@ -5,6 +5,7 @@ import { validate } from 'class-validator';
 
 class AuthController {
   static login = async (req: Request, res: Response) => {
+    /*
     const { username, password } = req.body;
 
     if (!(username && password)) {
@@ -26,8 +27,11 @@ class AuthController {
     }
 
     res.json({ message: 'OK', userId: user.id, role: user.role, username: user.username });
+    */
+    res.json({ message: 'OK' });
   };
 
+  /*
   static changePassword = async (req: Request, res: Response) => {
     const { userId } = res.locals.jwtPayload;
     const { oldPassword, newPassword } = req.body;
@@ -63,5 +67,6 @@ class AuthController {
 
     res.json({ message: 'Password change!' });
   };
+  */
 }
 export default AuthController;

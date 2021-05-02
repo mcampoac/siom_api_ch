@@ -1,12 +1,12 @@
 import { getRepository } from 'typeorm';
 import { Request, Response } from 'express';
-import { Users } from '../entity/Users';
+import { Usuario } from '../entity/Usuario';
 import { validate } from 'class-validator';
 
 export class UserController {
 
     static getAll = async (req: Request, res: Response) => {
-        const userRepository = getRepository(Users);
+        const userRepository = getRepository(Usuario);
       let users;
 
       try {

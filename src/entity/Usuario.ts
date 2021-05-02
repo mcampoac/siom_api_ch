@@ -47,17 +47,14 @@ export class Usuario {
 
   @Column()
   @MaxLength(50)
-  @IsNotEmpty()
   usua_telefono_fijo: string;
 
   @Column()
   @MaxLength(50)
-  @IsNotEmpty()
   usua_telefono_movil: string;
 
   @Column()
   @MaxLength(150)
-  @IsNotEmpty()
   usua_direccion: string;
 
   @CreateDateColumn()
@@ -84,17 +81,14 @@ export class Usuario {
 
   @Column()
   @MaxLength(255)
-  @IsNotEmpty()
   usua_crypt_pass: string;
 
   @Column()
   @MaxLength(2)
-  @IsNotEmpty()
   usua_selfie_tecnico: string;
 
   @Column()
   @MaxLength(80)
-  @IsNotEmpty()
   api_token: string;
 
   @CreateDateColumn({ type: 'datetime' })
